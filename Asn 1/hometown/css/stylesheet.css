@@ -1,0 +1,110 @@
+body {
+        background-color: beige;
+    font-family: sans-serif,serif
+        }
+
+#myBtn {
+    width:75px;
+    height: 50px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: lightcoral;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    transition: width 1s;
+
+}
+
+#myBtn:hover {
+  background-color: salmon; 
+    width: 150px;
+    
+}
+#myBtn:active {
+  background-color: salmon;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: grey;
+    color: ghostwhite;
+    font:arial;
+    
+    }
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.columnFood {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.columnAbout {
+  float: left;
+  width: 45%;
+  padding: 5px;
+}
+.columnCeleb {
+  float: left;
+  width: 48%;
+  padding: 10px;
+}
+
+h2{
+  border-bottom: 2px solid #000;
+  background: grey;
+  color:ghostwhite;
+    font-family: "Arial",arial, sans-serif;
+
+  display:inline-block;
+  padding:3px 15px;
+  margin-left:10px;
+    text-align: left;
+}
+h2:after{ /* the line under H2 */
+  left:0px;
+  display:block;
+  position:absolute;
+  width:100%;
+  height:3px;
+  margin-top:2px;
+  content: " ";
+  background:grey;
+}
+
+p{
+    font-family: "Times new Roman", times, serif;
+}
