@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css"  href="css/resp-styles.css">
+        <script type="text/jscript" src="js/javascriptFunctions.js"></script>
+    </head>
+    
+    
+    <body onscroll="scroll()">
+
+        <section>
+            <div class="col-8 col-1">
+                <div class="container">
+                    <div class="banner-img" id="banner"></div>
+                    <div class="banner-text overlay" id="bannerText">
+                        Stephen & Sons
+                    </div>
+                </div>
+
+                <div class="covid" id="covid" style="display: block">
+                    <p>
+                        The current coronavirus disease (COVID-19) global pandemic is having a significant impact on global industry. Stephen & Sons will still be operating, but we will be strictly consulting our clients via online.
+                    </p>
+                    <button class="covidButton" onclick="covidFunc()" type="button">x</button>
+                </div>
+                </div>
+        </section>
+        <!-- 
+            Top - banner with enhanced parrallax scrolling effect, text banner with sticky position to stay at the top and a covid warning with javascript to get rid of message-->
+
+        <section> 
+                <div class="col-8 col-1">
+                    <h1 id="s1">About</h1>
+                    <hr>
+                    <img class="col-2 col-2" src="images/about1.jpg" title="About 1">
+
+                    <div class="col-2 col-2">
+                        <p>
+                            Miami, city, southeastern Florida, U.S. a major transportation and business hub. Nicknamed “The Sunshine State”, Florida shipped US$56 billion worth of goods around the globe in 2019. That dollar amount reflects a -2.1% decrease from 2018 to 2019 but a 7.7% uptick since 2016.
+
+
+                            Are you looking for hard-hitting legal representation in the Miami-Dade or Broward County a	rea?
+                            
+                            Stephen & Sons have strong political pedigree’s and strong Capitol Hill ties, the firm covers dozens of practice areas, from money laundering, drug trafficking, and tax evasion to more industry-specific teams.  With over two dozen offices worldwide, an exceptionally broad practice scope, and household names for clients, it ranks as one of the nation’s largest firms.
+
+                        </p>
+
+                        </div>
+                    <img class="col-2 col-2" src="images/about2.jpg" title="About 2">
+                </div>
+        </section>
+        <!-- 
+            About - images with text about the city and the buissness -->
+        
+        <section> 
+            <div class="col-8 col-1">
+                <h1 id="s2">Slogan</h1>
+                <hr>
+                <img class="col-8 col-2 slogan" src="images/slogan.png" title="slogan">
+            </div>
+        
+        </section>
+        <!-- 
+            Slogan - image with mask of slogan and gavel as the shape-->
+        <section> 
+            <div class="col-8 col-1">
+                
+                <h1 id="s3">Services</h1>
+                <hr>
+                <div class="col-2 col-2">
+                     <p>Tax Evasion</p>
+                    <img class="col-7 col-2" src="images/serv1.jpg" title="Service 1">
+                    <br>
+                    <p>
+                        Is there a difference between tax evasion and a simple error or miscalculation? The answer is yes, tax fraud and tax evasion require that there is a willful or intentional wrongdoing involved.
+                        As anyone who has ever been re-assessed or penalized for late-filing or unpaid taxes knows, the IRA is arrogant and unforgiving.
+                        Stephen & Sons may be able to help you. We represent clients in a variety of tax matters such as tax controversy, IRS audits, tax fraud and so much more.
+                        
+                   </p>
+
+                </div>
+
+                <div class="col-2 col-2">
+                    <p>Drug Trafficking</p>
+                    <img class="col-7 col-2" src="images/serv2.jpg" title="Service 2">
+                    <br><br>
+                    <p>	
+                        The first issue in any drug case is the legality of the original encounter between the accused and the police. Each charge carries a different consequence. You may be facing a simple misdemeanor or a felony which may carry up to a life sentence. Every drug charge is unique. Strict procedures and laws must be followed in order for the charges to be upheld.
+
+                    </p>
+                </div>
+                <div class="col-2 col-2">
+                    <p>Money Laundering</p>
+                    <img class="col-7 col-2" src="images/serv3.jpg" title="Service 3">
+                    <br><br>
+                    <p>	
+                        Stephen & Sons are accomplished federal criminal defense attorneys.  Their practice focuses on the representation of persons and corporations that have been accused or convicted of committing money laundering crimes.  The proximity also makes Stephen & Sons easily accessible to clients, regardless of whether they travel to those clients, or those clients choose to travel to them.
+
+                    </p>
+                </div>
+            </div>
+        
+        </section>
+            <!-- 
+            Services - 3 law firm based services with same design for each service-->
+
+        <section> 
+            <div class="col-8 col-1"> 
+            <h1 id="s4">Account</h1>
+            <hr>
+            <div class="account">
+                
+                <div class="login col-6 col-2" id ="login" style="display: block">
+                    <form>
+                        <h3>Login</h3>
+                        <label for="usernameLogin">UserName</label>
+                        <input type="text" id="usernameLogin" class="textbox">
+                        <br>
+                        
+                        <label for="passwordLogin">Password</label>
+                        <input type="text" id="passwordLogin" class="textbox">
+                        <br>
+                        
+                        <button type ="button" onclick="login()">Login</button>
+
+                    </form>
+                
+                </div>
+                
+                <div class="registration col-6 col-2" id="register" style="display: none">
+                     <form>
+                         <h3>Registration</h3>
+                        <label for="usernameReg">UserName</label>
+                        <input type="text" id="usernameReg" class="textbox">
+                        <br>
+                        
+                        <label for="passwordReg">Password</label>
+                        <input type="text" id="passwordReg" class="textbox">
+                        <br>
+                        <label for="confrimPassword">Confirm Password</label>
+                        <input type="text" id="confrimPassword" class="textbox">
+                        <br>
+                        <button type ="button" onclick="register()">Register</button>
+                    
+                    </form>
+                </div>
+                
+                </div>
+            
+            <div style="background-color: beige">
+                <p>Switch to Login or Registration</p>
+                <label class="switch">
+                  <input type="checkbox" onclick="switchLogToReg()">
+                  <span class="slider"></span>
+                </label>
+                </div>
+            </div>
+        
+        </section>
+        <!-- 
+            Account - Login with form validation using javascript, registration with form validation and css animation for if either are incorrect. Switch to change the login to registration and back
+        -->
+        <section> 
+            <div class="col-8 col-1"> 
+            <h2 id="s5">References</h2>
+                <hr>
+                <p>Top</p>
+                <a href="https://unsplash.com/photos/bAQH53VquTc" target="_blank">Banner</a>
+                
+                <br><br>
+                
+                <p>About</p>
+                <a href="https://www.pexels.com/photo/icra-iflas-piled-book-159832/" target="_blank">Books</a>
+                <a href="https://www.pexels.com/photo/white-and-gray-high-rise-buildings-near-body-of-water-3663866/" target="_blank">Miami</a>
+                <br><br>
+                
+                <p>Slogan</p>
+                <a href="https://www.pexels.com/photo/book-shelves-book-stack-bookcase-books-207662/" target="_blank">Slogan </a>
+                <br><br>
+            
+                <p>Services</p>
+                <a href="https://www.pexels.com/photo/abundance-bank-banking-banknotes-259027/" target="_blank">Money</a>
+                <a href="https://www.pexels.com/photo/thermometer-on-medical-pills-139398/" target="_blank">Drugs</a>
+                <a href="https://www.pexels.com/photo/white-graphing-paper-164686/" target="_blank">Tax</a>
+                <br><br>
+
+                </div>
+        </section>
+    
+    </body>
+    
+</html>
+

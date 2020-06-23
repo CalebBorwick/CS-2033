@@ -1,0 +1,183 @@
+
+
+.covid{
+    background-color: yellow;
+    position: absolute;
+    display: block;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:2px;
+}
+.covidButton{
+    color: black;
+    padding: 0px 0px;
+    margin: 8px 0;
+    position: absolute;
+    width: 0%;
+    left:95%;
+    top: 65%;
+    
+}
+.banner-img{
+    background-image: url('banner.jpg');
+    height: 300px; 
+    width: 100%;
+    margin-bottom: 30px;
+    background-attachment: fixed;
+    background-size: cover;
+   }
+.banner-text{
+    width: 80%;
+    height: auto;
+    margin:auto;
+    background-color: lightcoral;
+    border: 3px solid black;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.sticky {
+  position: fixed;
+  top: 15px;
+  width: 100%
+}
+.content {
+  padding: 16px;
+}
+.container {
+    position: sticky;
+    text-align: center;
+    color: white;
+    top:0px;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.slogan{
+    width:auto;
+    height: 300px;
+}
+@media only screen and (min-width: 650px) {
+  /* For phones: */
+    .col-1{width: 100%;background-color: lightgray;}
+    .col-2{width: 75%;background-color: lightgray;}
+ 
+}
+
+@media only screen and (min-width: 1050px) {
+  /* For desktop: */
+  .col-1 {width: 25%; background-color: beige}
+  .col-2 {width: 30%;background-color: beige}
+  .col-3 {width: 50%;background-color: beige}
+  .col-4 {width: 66.6%; background-color: beige}
+  .col-6 {width: 75%;background-color: beige}
+  .col-7 {width: 90%;background-color: beige}
+  .col-8 {width: 100%;background-color: beige}
+
+}
+
+.animation {
+  animation: shake 0.5s;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: lightcoral;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+form{
+    border: 3px solid #f1f1f1;
+    background-color: beige;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: lightcoral;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
